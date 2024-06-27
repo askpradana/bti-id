@@ -1,20 +1,18 @@
 <script setup>
 import { Upload } from 'lucide-vue-next'
 defineProps({
-  title: String,
   listOfString: Array,
-  skill: String,
   listOfSkill: Array
 })
 </script>
 <template>
   <main class="px-6">
-    <h2 class="text-xl font-semibold">{{ title }}:</h2>
+    <h2 class="text-xl font-semibold">Job Description :</h2>
     <ul class="pl-12">
       <li v-for="item in listOfString" :key="item" class="list-disc">{{ item }}</li>
     </ul>
 
-    <h2 class="text-xl font-semibold pt-4">{{ skill }}:</h2>
+    <h2 class="text-xl font-semibold pt-4">Skill :</h2>
     <ul class="pl-12">
       <li v-for="item in listOfSkill" :key="item" class="list-disc">{{ item }}</li>
     </ul>

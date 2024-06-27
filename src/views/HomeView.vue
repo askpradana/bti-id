@@ -20,19 +20,18 @@ const titleList = [
   'UI/UX Designer',
   'Java spring boot'
 ]
+
+console.log(titleList.length)
 </script>
 
 <template>
-  <main>
-    <SingleWidget :title="titleList[0]">
-      <ModalDialog :title="titleList[0]">
-        <DialogContent
-          title="Job Description"
-          :listOfString="jobDesc"
-          :skill="titleList[0]"
-          :listOfSkill="skillDesc"
-        />
-      </ModalDialog>
-    </SingleWidget>
+  <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div v-for="i in titleList.length" :key="i - 1">
+      <SingleWidget :title="titleList[i - 1]">
+        <ModalDialog :title="titleList[i - 1]">
+          <DialogContent :listOfString="jobDesc" :listOfSkill="skillDesc" />
+        </ModalDialog>
+      </SingleWidget>
+    </div>
   </main>
 </template>
