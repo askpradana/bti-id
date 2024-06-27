@@ -20,8 +20,6 @@ const titleList = [
   'UI/UX Designer',
   'Java spring boot'
 ]
-
-console.log(titleList.length)
 </script>
 
 <template>

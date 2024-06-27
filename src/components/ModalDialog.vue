@@ -21,8 +21,6 @@ defineProps({
           <slot />
 
           <v-card-actions>
-            <!-- <v-btn text="Disagree" variant="text" @click="isActive.value = false"></v-btn> -->
-
             <v-btn text="Send Message" variant="tonal" @click="isActive.value = false"></v-btn>
             <v-spacer></v-spacer>
           </v-card-actions>
