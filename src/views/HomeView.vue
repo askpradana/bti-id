@@ -1,9 +1,12 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import SingleWidget from '@/components/SingleWidget.vue'
+import ModalDialog from '@/components/ModalDialog.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <SingleWidget title="Marketing Planner">
+      <ModalDialog />
+    </SingleWidget>
   </main>
 </template>
